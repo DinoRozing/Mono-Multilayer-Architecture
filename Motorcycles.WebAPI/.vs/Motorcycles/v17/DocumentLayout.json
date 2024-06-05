@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|c:\\users\\student\\desktop\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles.service.common\\imotorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|solutionrelative:motorcycles.service.common\\imotorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|c:\\users\\student\\desktop\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles.service\\motorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|solutionrelative:motorcycles.service\\motorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|c:\\users\\dinor\\documents\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|solutionrelative:motorcycles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IMotorcycleService.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\IMotorcycleService.cs",
-              "RelativeDocumentMoniker": "Motorcycles.Service.Common\\IMotorcycleService.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\IMotorcycleService.cs",
-              "RelativeToolTip": "Motorcycles.Service.Common\\IMotorcycleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Program.cs",
+              "RelativeDocumentMoniker": "Motorcycles\\Program.cs",
+              "ToolTip": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Program.cs",
+              "RelativeToolTip": "Motorcycles\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T11:59:27.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MotorcycleService.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\MotorcycleService.cs",
-              "RelativeDocumentMoniker": "Motorcycles.Service\\MotorcycleService.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\MotorcycleService.cs",
-              "RelativeToolTip": "Motorcycles.Service\\MotorcycleService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAQwCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T11:59:01.933Z",
+              "WhenOpened": "2024-06-05T19:09:48.975Z",
               "EditorCaption": ""
             }
           ]

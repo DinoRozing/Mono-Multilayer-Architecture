@@ -3,6 +3,7 @@ using Motorcycles.Repository.Common;
 using Motorcycles.Service.Common;
 using Motorcycles.Model;
 using System;
+using System.Threading.Tasks;
 
 namespace Motorcycles.WebAPI.Controllers
 {
@@ -19,7 +20,7 @@ namespace Motorcycles.WebAPI.Controllers
 
         [HttpPost]
         [Route("AddMotorcycle")]
-        public IActionResult AddMotorcycle([FromBody] Motorcycle motorcycle)
+        public async Task<IActionResult> AddMotorcycleAsync([FromBody] Motorcycle motorcycle)
         {
             if (motorcycle == null)
             {
@@ -28,7 +29,7 @@ namespace Motorcycles.WebAPI.Controllers
 
             try
             {
-                _motorcycleService.AddMotorcycle(motorcycle);
+                await _motorcycleService.AddMotorcycleAsync(motorcycle);
                 return Ok("Motorcycle added successfully.");
             }
             catch (Exception ex)
@@ -39,7 +40,7 @@ namespace Motorcycles.WebAPI.Controllers
 
         [HttpPut]
         [Route("UpdateMotorcycle")]
-        public IActionResult UpdateMotorcycle([FromBody] Motorcycle motorcycle)
+        public async Task<IActionResult> UpdateMotorcycleAsync([FromBody] Motorcycle motorcycle)
         {
             if (motorcycle == null || motorcycle.Id == 0)
             {
@@ -48,7 +49,7 @@ namespace Motorcycles.WebAPI.Controllers
 
             try
             {
-                _motorcycleService.UpdateMotorcycle(motorcycle);
+                await _motorcycleService.UpdateMotorcycleAsync(motorcycle);
                 return Ok("Motorcycle updated successfully.");
             }
             catch (Exception ex)
@@ -59,7 +60,7 @@ namespace Motorcycles.WebAPI.Controllers
 
         [HttpDelete]
         [Route("DeleteMotorcycle")]
-        public IActionResult DeleteMotorcycle(int id)
+        public async Task<IActionResult> DeleteMotorcycleAsync(int id)
         {
             if (id == 0)
             {
@@ -68,7 +69,7 @@ namespace Motorcycles.WebAPI.Controllers
 
             try
             {
-                _motorcycleService.DeleteMotorcycle(id);
+                await _motorcycleService.DeleteMotorcycleAsync(id);
                 return Ok($"Motorcycle with Id = {id} deleted successfully.");
             }
             catch (Exception ex)
@@ -79,7 +80,7 @@ namespace Motorcycles.WebAPI.Controllers
 
         [HttpGet]
         [Route("GetMotorcycle")]
-        public IActionResult GetMotorcycle(int id)
+        public async Task<IActionResult> GetMotorcycleAsync(int id)
         {
             if (id == 0)
             {
@@ -88,7 +89,7 @@ namespace Motorcycles.WebAPI.Controllers
 
             try
             {
-                var motorcycle = _motorcycleService.GetMotorcycle(id);
+                var motorcycle = await _motorcycleService.GetMotorcycleAsync(id);
                 if (motorcycle != null)
                 {
                     return Ok(motorcycle);
@@ -106,7 +107,7 @@ namespace Motorcycles.WebAPI.Controllers
 
         [HttpGet]
         [Route("GetMotorcycleByName")]
-        public IActionResult GetMotorcyclesByUserName(string firstName, string lastName)
+        public async Task<IActionResult> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
             {
@@ -115,7 +116,7 @@ namespace Motorcycles.WebAPI.Controllers
 
             try
             {
-                var motorcycles = _motorcycleService.GetMotorcyclesByUserName(firstName, lastName);
+                var motorcycles = await _motorcycleService.GetMotorcyclesByUserNameAsync(firstName, lastName);
                 return Ok(motorcycles);
             }
             catch (Exception ex)

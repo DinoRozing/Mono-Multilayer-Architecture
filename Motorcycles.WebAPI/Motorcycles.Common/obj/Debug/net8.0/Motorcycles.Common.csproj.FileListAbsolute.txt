@@ -1,0 +1,13 @@
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\bin\Debug\net8.0\Motorcycles.Common.deps.json
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\bin\Debug\net8.0\Motorcycles.Common.dll
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\bin\Debug\net8.0\Motorcycles.Common.pdb
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.csproj.AssemblyReference.cache
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.AssemblyInfoInputs.cache
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.AssemblyInfo.cs
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.csproj.CoreCompileInputs.cache
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.sourcelink.json
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.dll
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\refint\Motorcycles.Common.dll
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\Motorcycles.Common.pdb
+C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcycles.Common\obj\Debug\net8.0\ref\Motorcycles.Common.dll

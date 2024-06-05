@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {}
+    "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+    "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
+        "projectUniqueName": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
         "projectName": "Motorcycles.Model",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\obj\\",
+        "projectPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
+        "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

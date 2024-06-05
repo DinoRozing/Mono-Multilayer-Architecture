@@ -1,4 +1,7 @@
-﻿namespace Motorcycles.Model
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace Motorcycles.Model
 {
     public class User
     {

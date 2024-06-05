@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Motorcycles.Repository
 {
@@ -17,11 +18,11 @@ namespace Motorcycles.Repository
                              ?? throw new InvalidOperationException("Connection string 'DefaultConnection' is not configured.");
         }
 
-        public void AddMotorcycle(Motorcycle motorcycle)
+        public async Task AddMotorcycleAsync(Motorcycle motorcycle)
         {
             using (var connection = new NpgsqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 using (var command = new NpgsqlCommand())
                 {
                     command.Connection = connection;
@@ -38,16 +39,16 @@ namespace Motorcycles.Repository
                     command.Parameters.AddWithValue("DateCreated", motorcycle.DateCreated);
                     command.Parameters.AddWithValue("DateUpdated", motorcycle.DateUpdated);
 
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                 }
             }
         }
 
-        public void UpdateMotorcycle(Motorcycle motorcycle)
+        public async Task UpdateMotorcycleAsync(Motorcycle motorcycle)
         {
             using (var connection = new NpgsqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 using (var command = new NpgsqlCommand())
                 {
                     command.Connection = connection;
@@ -68,40 +69,40 @@ namespace Motorcycles.Repository
                     command.Parameters.AddWithValue("DateUpdated", motorcycle.DateUpdated);
                     command.Parameters.AddWithValue("Id", motorcycle.Id);
 
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                 }
             }
         }
 
-        public void DeleteMotorcycle(int id)
+        public async Task DeleteMotorcycleAsync(int id)
         {
             using (var connection = new NpgsqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 using (var command = new NpgsqlCommand())
                 {
                     command.Connection = connection;
                     command.CommandText = @"DELETE FROM ""Motorcycle"" WHERE ""Id"" = @Id";
                     command.Parameters.AddWithValue("Id", id);
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                 }
             }
         }
 
-        public Motorcycle GetMotorcycle(int id)
+        public async Task<Motorcycle> GetMotorcycleAsync(int id)
         {
             using (var connection = new NpgsqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 using (var command = new NpgsqlCommand())
                 {
                     command.Connection = connection;
                     command.CommandText = @"SELECT * FROM ""Motorcycle"" WHERE ""Id"" = @Id";
                     command.Parameters.AddWithValue("Id", id);
 
-                    using (var reader = command.ExecuteReader())
+                    using (var reader = await command.ExecuteReaderAsync())
                     {
-                        if (reader.Read())
+                        if (await reader.ReadAsync())
                         {
                             return new Motorcycle
                             {
@@ -125,13 +126,13 @@ namespace Motorcycles.Repository
             }
         }
 
-        public List<Motorcycle> GetMotorcyclesByUserName(string firstName, string lastName)
+        public async Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
         {
             var motorcycles = new List<Motorcycle>();
 
             using (var connection = new NpgsqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 using (var command = new NpgsqlCommand())
                 {
                     command.Connection = connection;
@@ -144,9 +145,9 @@ namespace Motorcycles.Repository
                     command.Parameters.AddWithValue("FirstName", firstName);
                     command.Parameters.AddWithValue("LastName", lastName);
 
-                    using (var reader = command.ExecuteReader())
+                    using (var reader = await command.ExecuteReaderAsync())
                     {
-                        while (reader.Read())
+                        while (await reader.ReadAsync())
                         {
                             motorcycles.Add(new Motorcycle
                             {

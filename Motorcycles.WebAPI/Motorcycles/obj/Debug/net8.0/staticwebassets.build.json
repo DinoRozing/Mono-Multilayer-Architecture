@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "PO3Lh9uoWVpKQaorRzUcW4pcLUKSeiPeUZ6apeFoSGg=",
-  "Source": "Motorcycles",
-  "BasePath": "_content/Motorcycles",
+  "Hash": "eJc9kNw5O3vsHCm/QIGI5TXzHmLiJeL/+n2VOg26Nwg=",
+  "Source": "Motorcycles.WebAPI",
+  "BasePath": "_content/Motorcycles.WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

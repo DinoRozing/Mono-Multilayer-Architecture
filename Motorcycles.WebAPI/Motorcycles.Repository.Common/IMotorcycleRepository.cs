@@ -1,13 +1,14 @@
 ﻿using Motorcycles.Model;
+using System.Collections.Generic;
 
 namespace Motorcycles.Repository.Common
 {
     public interface IMotorcycleRepository
     {
-        void AddMotorcycle(Motorcycle motorcycle);
-        void UpdateMotorcycle(Motorcycle motorcycle);
-        void DeleteMotorcycle(int id);
-        Motorcycle GetMotorcycle(int id);
-        List<Motorcycle> GetMotorcyclesByUserName(string firstName, string lastName);
+        Task AddMotorcycleAsync(Motorcycle motorcycle);
+        Task UpdateMotorcycleAsync(Motorcycle motorcycle);
+        Task DeleteMotorcycleAsync(int id);
+        Task<Motorcycle> GetMotorcycleAsync(int id);
+        Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName);
     }
 }

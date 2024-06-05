@@ -1,6 +1,6 @@
 using Motorcycles.Repository.Common;
 using Motorcycles.Repository;
-using Motorcylces.Service.Common;
+using Motorcycles.Service.Common;
 using Motorcycles.Service;
 
 var builder = WebApplication.CreateBuilder(args);

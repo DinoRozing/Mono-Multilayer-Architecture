@@ -13,6 +13,64 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
+      "Microsoft.Extensions.Configuration/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
         "type": "package",
         "compile": {
@@ -46,6 +104,22 @@
         },
         "build": {
           "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.OpenApi/1.2.3": {
@@ -143,6 +217,9 @@
       "Motorcycles.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Npgsql": "8.0.3"
+        },
         "compile": {
           "bin/placeholder/Motorcycles.Model.dll": {}
         },
@@ -154,8 +231,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Motorcycles.Model": "1.0.0",
-          "Motorcycles.Repository.Common": "1.0.0"
+          "Motorcycles.Repository.Common": "1.0.0",
+          "Npgsql": "8.0.3"
         },
         "compile": {
           "bin/placeholder/Motorcycles.Repository.dll": {}
@@ -168,7 +248,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Motorcycles.Model": "1.0.0"
+          "Motorcycles.Model": "1.0.0",
+          "Npgsql": "8.0.3"
         },
         "compile": {
           "bin/placeholder/Motorcycles.Repository.Common.dll": {}
@@ -182,7 +263,9 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Motorcycles.Model": "1.0.0",
-          "Motorcycles.Service.Common": "1.0.0"
+          "Motorcycles.Repository.Common": "1.0.0",
+          "Motorcycles.Service.Common": "1.0.0",
+          "Npgsql": "8.0.3"
         },
         "compile": {
           "bin/placeholder/Motorcycles.Service.dll": {}
@@ -195,7 +278,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Motorcycles.Model": "1.0.0"
+          "Motorcycles.Model": "1.0.0",
+          "Npgsql": "8.0.3"
         },
         "compile": {
           "bin/placeholder/Motorcycles.Service.Common.dll": {}
@@ -438,6 +522,98 @@
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
       ]
     },
+    "Microsoft.Extensions.Configuration/8.0.0": {
+      "sha512": "0J/9YNXTMWSZP2p2+nvl8p71zpSwokZXZuJW+VjdErkegAnFdO1XlqtA62SJtgVYHdKu3uPxJHcMR/r35HwFBA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net8.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net8.0/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/8.0.0": {
+      "sha512": "3lE/iLSutpgX1CC0NOW70FJoGARRHbyKmG7dc0klnUZ9Dd9hS6N/POPWhKhMLCEuNN5nXEY5agmlFtH562vqhQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "sha512": "V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
       "sha512": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
       "type": "package",
@@ -540,6 +716,36 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/8.0.0": {
+      "sha512": "bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "lib/net462/Microsoft.Extensions.Primitives.dll",
+        "lib/net462/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net7.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net8.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net8.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -702,19 +908,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {}
+    "C:\\Users\\dinor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
       "projectName": "Motorcycles.WebAPI",
-      "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\obj\\",
+      "projectPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -729,20 +935,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
-              "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
+            "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
+              "projectPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
             },
-            "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj": {
-              "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj"
+            "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj": {
+              "projectPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj"
             },
-            "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
-              "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj"
+            "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
+              "projectPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj"
             },
-            "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj": {
-              "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj"
+            "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj": {
+              "projectPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj"
             },
-            "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
-              "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
+            "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+              "projectPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
             }
           }
         }

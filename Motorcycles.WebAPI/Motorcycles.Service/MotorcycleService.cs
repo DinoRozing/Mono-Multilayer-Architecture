@@ -1,6 +1,8 @@
 ﻿using Motorcycles.Service.Common;
 using Motorcycles.Model;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Motorcycles.Repository.Common;
 
 namespace Motorcycles.Service
 {
@@ -13,29 +15,29 @@ namespace Motorcycles.Service
             _motorcycleRepository = motorcycleRepository;
         }
 
-        public void AddMotorcycle(Motorcycle motorcycle)
+        public async Task AddMotorcycleAsync(Motorcycle motorcycle)
         {
-            _motorcycleRepository.AddMotorcycle(motorcycle);
+            await _motorcycleRepository.AddMotorcycleAsync(motorcycle);
         }
 
-        public void UpdateMotorcycle(Motorcycle motorcycle)
+        public async Task UpdateMotorcycleAsync(Motorcycle motorcycle)
         {
-            _motorcycleRepository.UpdateMotorcycle(motorcycle);
+            await _motorcycleRepository.UpdateMotorcycleAsync(motorcycle);
         }
 
-        public void DeleteMotorcycle(int id)
+        public async Task DeleteMotorcycleAsync(int id)
         {
-            _motorcycleRepository.DeleteMotorcycle(id);
+            await _motorcycleRepository.DeleteMotorcycleAsync(id);
         }
 
-        public Motorcycle GetMotorcycle(int id)
+        public async Task<Motorcycle> GetMotorcycleAsync(int id)
         {
-            return _motorcycleRepository.GetMotorcycle(id);
+            return await _motorcycleRepository.GetMotorcycleAsync(id);
         }
 
-        public List<Motorcycle> GetMotorcyclesByUserName(string firstName, string lastName)
+        public async Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
         {
-            return _motorcycleRepository.GetMotorcyclesByUserName(firstName, lastName);
+            return await _motorcycleRepository.GetMotorcyclesByUserNameAsync(firstName, lastName);
         }
     }
 }
