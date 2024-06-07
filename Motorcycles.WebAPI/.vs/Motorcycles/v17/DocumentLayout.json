@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|c:\\users\\dinor\\documents\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|c:\\users\\student\\desktop\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|solutionrelative:motorcycles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|c:\\users\\student\\desktop\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles.service\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|solutionrelative:motorcycles.service\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|c:\\users\\student\\desktop\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles.service.common\\motorcycles.service.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|solutionrelative:motorcycles.service.common\\motorcycles.service.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|c:\\users\\student\\desktop\\mono-multilayer-architecture\\motorcycles.webapi\\motorcycles.service\\motorcycles.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|solutionrelative:motorcycles.service\\motorcycles.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 178,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +34,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Motorcycles.Service\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "Motorcycles.Service\\Mapping\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T10:47:19.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Program.cs",
               "RelativeDocumentMoniker": "Motorcycles\\Program.cs",
-              "ToolTip": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Program.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles\\Program.cs",
               "RelativeToolTip": "Motorcycles\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T19:09:48.975Z",
+              "WhenOpened": "2024-06-07T10:44:54.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Motorcycles.Service.Common",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+              "RelativeDocumentMoniker": "Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+              "ToolTip": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+              "RelativeToolTip": "Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-07T10:44:04.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Motorcycles.Service",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj",
+              "RelativeDocumentMoniker": "Motorcycles.Service\\Motorcycles.Service.csproj",
+              "ToolTip": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj",
+              "RelativeToolTip": "Motorcycles.Service\\Motorcycles.Service.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-07T10:43:37.508Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,4 @@
-﻿using Motorcycles.Model;
+﻿using Motorcycles.Service.Common.DTOs;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -6,10 +6,10 @@ namespace Motorcycles.Service.Common
 {
     public interface IMotorcycleService
     {
-        Task AddMotorcycleAsync(Motorcycle motorcycle);
-        Task UpdateMotorcycleAsync(Motorcycle motorcycle);
+        Task AddMotorcycleAsync(MotorcycleDTO motorcycleDto);
+        Task UpdateMotorcycleAsync(MotorcycleDTO motorcycleDto);
         Task DeleteMotorcycleAsync(int id);
-        Task<Motorcycle> GetMotorcycleAsync(int id);
-        Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName);
+        Task<MotorcycleDTO> GetMotorcycleAsync(int id);
+        Task<List<MotorcycleDTO>> GetMotorcyclesByUserNameAsync(string firstName, string lastName);
     }
 }

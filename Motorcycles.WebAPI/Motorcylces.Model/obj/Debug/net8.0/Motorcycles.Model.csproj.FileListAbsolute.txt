@@ -11,3 +11,16 @@ C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcy
 C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\refint\Motorcycles.Model.dll
 C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.pdb
 C:\Users\dinor\Documents\MONO-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\ref\Motorcycles.Model.dll
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\bin\Debug\net8.0\Motorcycles.Model.deps.json
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\bin\Debug\net8.0\Motorcycles.Model.dll
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\bin\Debug\net8.0\Motorcycles.Model.pdb
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.AssemblyInfo.cs
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.sourcelink.json
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.dll
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\refint\Motorcycles.Model.dll
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\Motorcycles.Model.pdb
+C:\Users\student\Desktop\Mono-Multilayer-Architecture\Motorcycles.WebAPI\Motorcylces.Model\obj\Debug\net8.0\ref\Motorcycles.Model.dll

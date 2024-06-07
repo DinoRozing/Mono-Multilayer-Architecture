@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "I+2wq+5oFso=",
+  "dgSpecHash": "AptaoXYnE2k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dinor\\Documents\\MONO-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Common\\Motorcycles.Common.csproj",
+  "projectFilePath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcycles.Common\\Motorcycles.Common.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dinor\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\dinor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\dinor\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512"
+    "C:\\Users\\student\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512"
   ],
   "logs": []
 }

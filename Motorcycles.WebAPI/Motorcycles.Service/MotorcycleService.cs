@@ -1,27 +1,33 @@
-﻿using Motorcycles.Service.Common;
+﻿using AutoMapper;
 using Motorcycles.Model;
+using Motorcycles.Repository.Common;
+using Motorcycles.Service.Common;
+using Motorcycles.Service.Common.DTOs;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Motorcycles.Repository.Common;
 
 namespace Motorcycles.Service
 {
     public class MotorcycleService : IMotorcycleService
     {
         private readonly IMotorcycleRepository _motorcycleRepository;
+        private readonly IMapper _mapper;
 
-        public MotorcycleService(IMotorcycleRepository motorcycleRepository)
+        public MotorcycleService(IMotorcycleRepository motorcycleRepository, IMapper mapper)
         {
             _motorcycleRepository = motorcycleRepository;
+            _mapper = mapper;
         }
 
-        public async Task AddMotorcycleAsync(Motorcycle motorcycle)
+        public async Task AddMotorcycleAsync(MotorcycleDTO motorcycleDto)
         {
+            var motorcycle = _mapper.Map<Motorcycle>(motorcycleDto);
             await _motorcycleRepository.AddMotorcycleAsync(motorcycle);
         }
 
-        public async Task UpdateMotorcycleAsync(Motorcycle motorcycle)
+        public async Task UpdateMotorcycleAsync(MotorcycleDTO motorcycleDto)
         {
+            var motorcycle = _mapper.Map<Motorcycle>(motorcycleDto);
             await _motorcycleRepository.UpdateMotorcycleAsync(motorcycle);
         }
 
@@ -30,14 +36,16 @@ namespace Motorcycles.Service
             await _motorcycleRepository.DeleteMotorcycleAsync(id);
         }
 
-        public async Task<Motorcycle> GetMotorcycleAsync(int id)
+        public async Task<MotorcycleDTO> GetMotorcycleAsync(int id)
         {
-            return await _motorcycleRepository.GetMotorcycleAsync(id);
+            var motorcycle = await _motorcycleRepository.GetMotorcycleAsync(id);
+            return _mapper.Map<MotorcycleDTO>(motorcycle);
         }
 
-        public async Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
+        public async Task<List<MotorcycleDTO>> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
         {
-            return await _motorcycleRepository.GetMotorcyclesByUserNameAsync(firstName, lastName);
+            var motorcycles = await _motorcycleRepository.GetMotorcyclesByUserNameAsync(firstName, lastName);
+            return _mapper.Map<List<MotorcycleDTO>>(motorcycles);
         }
     }
 }

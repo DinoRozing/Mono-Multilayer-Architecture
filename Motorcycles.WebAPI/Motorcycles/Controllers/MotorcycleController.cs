@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Motorcycles.Repository.Common;
 using Motorcycles.Service.Common;
-using Motorcycles.Model;
+using Motorcycles.Service.Common.DTOs;
 using System;
 using System.Threading.Tasks;
 
@@ -20,16 +19,16 @@ namespace Motorcycles.WebAPI.Controllers
 
         [HttpPost]
         [Route("AddMotorcycle")]
-        public async Task<IActionResult> AddMotorcycleAsync([FromBody] Motorcycle motorcycle)
+        public async Task<IActionResult> AddMotorcycleAsync([FromBody] MotorcycleDTO motorcycleDto)
         {
-            if (motorcycle == null)
+            if (motorcycleDto == null)
             {
                 return BadRequest("Motorcycle data is null.");
             }
 
             try
             {
-                await _motorcycleService.AddMotorcycleAsync(motorcycle);
+                await _motorcycleService.AddMotorcycleAsync(motorcycleDto);
                 return Ok("Motorcycle added successfully.");
             }
             catch (Exception ex)
@@ -40,16 +39,16 @@ namespace Motorcycles.WebAPI.Controllers
 
         [HttpPut]
         [Route("UpdateMotorcycle")]
-        public async Task<IActionResult> UpdateMotorcycleAsync([FromBody] Motorcycle motorcycle)
+        public async Task<IActionResult> UpdateMotorcycleAsync([FromBody] MotorcycleDTO motorcycleDto)
         {
-            if (motorcycle == null || motorcycle.Id == 0)
+            if (motorcycleDto == null || motorcycleDto.Id == 0)
             {
                 return BadRequest("Invalid motorcycle data.");
             }
 
             try
             {
-                await _motorcycleService.UpdateMotorcycleAsync(motorcycle);
+                await _motorcycleService.UpdateMotorcycleAsync(motorcycleDto);
                 return Ok("Motorcycle updated successfully.");
             }
             catch (Exception ex)
